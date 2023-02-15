@@ -1,0 +1,23 @@
+create (p1:Person {CF:"P1"})
+create (p2:Person {CF:"P2"})
+create (p3:Person {CF:"P3"})
+create (p4:Person {CF:"P4"})
+create (p5:Person {CF:"P5"})
+create (p6:Person {CF:"P6"})
+create (p7:Person {CF:"P7"})
+create (p8:Person {CF:"P8"})
+create (p9:Person {CF:"P9"})
+create (p10:Person {CF:"P10"})
+
+create (p1)-[:LIVES_WITH]->(p2)
+create (p1)-[:LIVES_WITH]->(p3)
+create (p1)-[:LIVES_WITH]->(p4)
+create (p2)-[:LIVES_WITH]->(p3)
+create (p2)-[:LIVES_WITH]->(p4)
+create (p3)-[:LIVES_WITH]->(p4)
+
+create (p5)-[:LIVES_WITH]->(p6)
+
+create (p8)-[:LIVES_WITH]->(p9)
+create (p8)-[:LIVES_WITH]->(p10)
+create (p9)-[:LIVES_WITH]->(p10)

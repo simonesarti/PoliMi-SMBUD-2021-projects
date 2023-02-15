@@ -1,0 +1,47 @@
+CREATE(p1: Person{CF:"P1"})
+CREATE(p2: Person{CF:"P2"})
+CREATE(p3: Person{CF:"P3"})
+
+CREATE (l1: Place{PlaceID:11})
+CREATE (l2: Place{PlaceID:22})
+CREATE (l3: Place{PlaceID:33})
+CREATE (l4: Place{PlaceID:44})
+
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-11-06T23:50:35.556000000+01:00"),datetime_left:datetime("2021-11-07T03:50:35.556000000+01:00")}]->(l1)
+CREATE (p2)-[:VISITED {datetime_arrived:datetime("2021-11-06T18:50:35.556000000+01:00"),datetime_left:datetime("2021-11-07T02:50:35.556000000+01:00")}]->(l1)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-11-12T15:50:35.556000000+01:00"),datetime_left:datetime("2021-11-12T17:50:35.556000000+01:00")}]->(l1)
+CREATE (p2)-[:VISITED {datetime_arrived:datetime("2021-11-12T18:50:35.556000000+01:00"),datetime_left:datetime("2021-11-12T19:50:35.556000000+01:00")}]->(l1)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-11-10T15:50:35.556000000+01:00"),datetime_left:datetime("2021-11-10T17:50:35.556000000+01:00")}]->(l1)
+CREATE (p2)-[:VISITED {datetime_arrived:datetime("2021-11-10T16:50:35.556000000+01:00"),datetime_left:datetime("2021-11-10T19:50:35.556000000+01:00")}]->(l1)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-10-10T16:50:35.556000000+01:00"),datetime_left:datetime("2021-10-10T19:00:35.556000000+01:00")}]->(l2)
+CREATE (p2)-[:VISITED {datetime_arrived:datetime("2021-10-10T15:50:35.556000000+01:00"),datetime_left:datetime("2021-10-10T19:00:35.556000000+01:00")}]->(l2)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-11-08T15:50:35.556000000+01:00"),datetime_left:datetime("2021-11-08T18:00:35.556000000+01:00")}]->(l2)
+CREATE (p2)-[:VISITED {datetime_arrived:datetime("2021-11-08T16:50:35.556000000+01:00"),datetime_left:datetime("2021-11-08T18:00:35.556000000+01:00")}]->(l2)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-10-08T20:50:35.556000000+01:00"),datetime_left:datetime("2021-10-08T21:00:35.556000000+01:00")}]->(l2)
+CREATE (p2)-[:VISITED {datetime_arrived:datetime("2021-10-08T15:50:35.556000000+01:00"),datetime_left:datetime("2021-10-08T19:00:35.556000000+01:00")}]->(l2)
+
+
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-11-07T23:50:35.556000000+01:00"),datetime_left:datetime("2021-11-08T03:50:35.556000000+01:00")}]->(l3)
+CREATE (p3)-[:VISITED {datetime_arrived:datetime("2021-11-07T18:50:35.556000000+01:00"),datetime_left:datetime("2021-11-08T02:50:35.556000000+01:00")}]->(l3)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-11-13T15:50:35.556000000+01:00"),datetime_left:datetime("2021-11-13T17:50:35.556000000+01:00")}]->(l3)
+CREATE (p3)-[:VISITED {datetime_arrived:datetime("2021-11-13T18:50:35.556000000+01:00"),datetime_left:datetime("2021-11-13T19:50:35.556000000+01:00")}]->(l3)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-11-11T15:50:35.556000000+01:00"),datetime_left:datetime("2021-11-11T17:50:35.556000000+01:00")}]->(l3)
+CREATE (p3)-[:VISITED {datetime_arrived:datetime("2021-11-11T16:50:35.556000000+01:00"),datetime_left:datetime("2021-11-11T19:50:35.556000000+01:00")}]->(l3)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-10-11T16:50:35.556000000+01:00"),datetime_left:datetime("2021-10-11T19:00:35.556000000+01:00")}]->(l4)
+CREATE (p3)-[:VISITED {datetime_arrived:datetime("2021-10-11T15:50:35.556000000+01:00"),datetime_left:datetime("2021-10-11T19:00:35.556000000+01:00")}]->(l4)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-11-09T15:50:35.556000000+01:00"),datetime_left:datetime("2021-11-09T18:00:35.556000000+01:00")}]->(l4)
+CREATE (p3)-[:VISITED {datetime_arrived:datetime("2021-11-09T16:50:35.556000000+01:00"),datetime_left:datetime("2021-11-09T18:00:35.556000000+01:00")}]->(l4)
+
+CREATE (p1)-[:VISITED {datetime_arrived:datetime("2021-10-09T20:50:35.556000000+01:00"),datetime_left:datetime("2021-10-09T21:00:35.556000000+01:00")}]->(l4)
+CREATE (p3)-[:VISITED {datetime_arrived:datetime("2021-10-09T15:50:35.556000000+01:00"),datetime_left:datetime("2021-10-09T19:00:35.556000000+01:00")}]->(l4)

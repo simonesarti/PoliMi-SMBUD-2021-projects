@@ -1,0 +1,140 @@
+create (p1:Person {CF:"P1"})
+create (p2:Person {CF:"P2"})
+create (p3:Person {CF:"P3"})
+create (p4:Person {CF:"P4"})
+create (p5:Person {CF:"P5"})
+create (p6:Person {CF:"P6"})
+create (p7:Person {CF:"P7"})
+create (p8:Person {CF:"P8"})
+create (p9:Person {CF:"P9"})
+create (p10:Person {CF:"P10"})
+create (p11:Person {CF:"P11"})
+create (p12:Person {CF:"P12"})
+
+
+
+create (t1:Test {testID:1,result:"negative",date:date("2021-11-10")})
+
+create (t2:Test {testID:2,result:"positive",date:date("2021-11-10")})
+
+create (t3:Test {testID:3,result:"positive",date:date("2021-11-10")})
+create (t4:Test {testID:4,result:"negative",date:date("2021-11-11")})
+
+create (t5:Test {testID:5,result:"negative",date:date("2021-11-10")})
+create (t6:Test {testID:6,result:"positive",date:date("2021-11-11")})
+
+create (t7:Test {testID:7,result:"positive",date:date("2021-11-10")})
+create (t8:Test {testID:8,result:"negative",date:date("2021-11-11")})
+create (t9:Test {testID:9,result:"positive",date:date("2021-11-12")})
+
+create (t10:Test {testID:10,result:"negative",date:date("2021-11-10")})
+create (t11:Test {testID:11,result:"positive",date:date("2021-11-11")})
+create (t12:Test {testID:12,result:"positive",date:date("2021-11-12")})
+
+create (t13:Test {testID:13,result:"positive",date:date("2021-11-10")})
+create (t14:Test {testID:14,result:"positive",date:date("2021-11-11")})
+create (t15:Test {testID:15,result:"negative",date:date("2021-11-12")})
+
+create (t16:Test {testID:16,result:"positive",date:date("2021-11-10")})
+create (t17:Test {testID:17,result:"negative",date:date("2021-11-11")})
+create (t18:Test {testID:18,result:"positive",date:date("2021-11-12")})
+create (t19:Test {testID:19,result:"positive",date:date("2021-11-13")})
+
+create (t20:Test {testID:20,result:"negative",date:date("2021-11-10")})
+create (t21:Test {testID:21,result:"positive",date:date("2021-11-11")})
+create (t22:Test {testID:22,result:"positive",date:date("2021-11-12")})
+create (t23:Test {testID:23,result:"positive",date:date("2021-11-13")})
+
+create (t24:Test {testID:24,result:"positive",date:date("2021-11-10")})
+create (t25:Test {testID:25,result:"positive",date:date("2021-11-11")})
+create (t26:Test {testID:26,result:"negative",date:date("2021-11-12")})
+create (t27:Test {testID:27,result:"positive",date:date("2021-11-13")})
+
+create (t28:Test {testID:28,result:"positive",date:date("2021-11-10")})
+create (t29:Test {testID:29,result:"positive",date:date("2021-11-11")})
+create (t30:Test {testID:30,result:"positive",date:date("2021-11-12")})
+create (t31:Test {testID:31,result:"negative",date:date("2021-11-13")})
+
+create (t32:Test {testID:32,result:"positive",date:date("2021-11-10")})
+create (t33:Test {testID:33,result:"negative",date:date("2021-11-11")})
+create (t34:Test {testID:34,result:"positive",date:date("2021-11-12")})
+create (t35:Test {testID:35,result:"negative",date:date("2021-11-13")})
+create (t36:Test {testID:36,result:"positive",date:date("2021-11-14")})
+
+
+create (p1)-[:TESTED]->(t1)
+
+create (p2)-[:TESTED]->(t2)
+
+create (p3)-[:TESTED]->(t3)
+create (p3)-[:TESTED]->(t4)
+
+create (p4)-[:TESTED]->(t5)
+create (p4)-[:TESTED]->(t6)
+
+create (p5)-[:TESTED]->(t7)
+create (p5)-[:TESTED]->(t8)
+create (p5)-[:TESTED]->(t9)
+
+create (p6)-[:TESTED]->(t10)
+create (p6)-[:TESTED]->(t11)
+create (p6)-[:TESTED]->(t12)
+
+create (p7)-[:TESTED]->(t13)
+create (p7)-[:TESTED]->(t14)
+create (p7)-[:TESTED]->(t15)
+
+create (p8)-[:TESTED]->(t16)
+create (p8)-[:TESTED]->(t17)
+create (p8)-[:TESTED]->(t18)
+create (p8)-[:TESTED]->(t19)
+
+create (p9)-[:TESTED]->(t20)
+create (p9)-[:TESTED]->(t21)
+create (p9)-[:TESTED]->(t22)
+create (p9)-[:TESTED]->(t23)
+
+create (p10)-[:TESTED]->(t24)
+create (p10)-[:TESTED]->(t25)
+create (p10)-[:TESTED]->(t26)
+create (p10)-[:TESTED]->(t27)
+
+create (p11)-[:TESTED]->(t28)
+create (p11)-[:TESTED]->(t29)
+create (p11)-[:TESTED]->(t30)
+create (p11)-[:TESTED]->(t31)
+
+create (p12)-[:TESTED]->(t32)
+create (p12)-[:TESTED]->(t33)
+create (p12)-[:TESTED]->(t34)
+create (p12)-[:TESTED]->(t35)
+create (p12)-[:TESTED]->(t36)
+
+
+
+
+create (v1:Vaccine {date:date("2021-11-10")})
+create (v2:Vaccine {date:date("2021-11-10")})
+create (v3:Vaccine {date:date("2021-11-11")})
+create (v4:Vaccine {date:date("2021-11-11")})
+create (v5:Vaccine {date:date("2021-11-11")})
+create (v6:Vaccine {date:date("2021-11-10")})
+create (v7:Vaccine {date:date("2021-11-11")})
+create (v8:Vaccine {date:date("2021-11-12")})
+create (v9:Vaccine {date:date("2021-11-10")})
+create (v10:Vaccine {date:date("2021-11-12")})
+create (v11:Vaccine {date:date("2021-11-09")})
+create (v12:Vaccine {date:date("2021-11-15")})
+
+create (p1)-[:VACCINATED]->(v1)
+create (p2)-[:VACCINATED]->(v2)
+create (p3)-[:VACCINATED]->(v3)
+create (p4)-[:VACCINATED]->(v4)
+create (p5)-[:VACCINATED]->(v5)
+create (p6)-[:VACCINATED]->(v6)
+create (p7)-[:VACCINATED]->(v7)
+create (p8)-[:VACCINATED]->(v8)
+create (p9)-[:VACCINATED]->(v9)
+create (p10)-[:VACCINATED]->(v10)
+create (p11)-[:VACCINATED]->(v11)
+create (p12)-[:VACCINATED]->(v12)

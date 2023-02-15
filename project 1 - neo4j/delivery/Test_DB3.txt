@@ -1,0 +1,45 @@
+create (p1:Person {CF:"P1"})-[:USE_DEVICE]->(d11:Device)
+create (p2:Person {CF:"P2"})-[:USE_DEVICE]->(d21:Device)
+create (p3:Person {CF:"P3"})-[:USE_DEVICE]->(d31:Device)
+create (p4:Person {CF:"P4"})-[:USE_DEVICE]->(d41:Device)
+create (p1)-[:USE_DEVICE]->(d12:Device)
+create (p2)-[:USE_DEVICE]->(d22:Device)
+create (p3)-[:USE_DEVICE]->(d32:Device)
+create (p4)-[:USE_DEVICE]->(d42:Device)
+
+
+create (d11)-[:DETECTED_CONTACT {date:date("2021-09-01")}]->(d21)	
+create (d11)-[:DETECTED_CONTACT {date:date("2021-11-10")}]->(d21)
+create (d11)-[:DETECTED_CONTACT {date:date("2021-11-10")}]->(d21)	
+
+create (d12)-[:DETECTED_CONTACT {date:date("2021-11-09")}]->(d21)
+create (d12)-[:DETECTED_CONTACT {date:date("2021-11-09")}]->(d21) 
+
+create (d11)-[:DETECTED_CONTACT {date:date("2021-11-08")}]->(d22)
+create (d11)-[:DETECTED_CONTACT {date:date("2021-11-07")}]->(d22)
+
+create (d12)-[:DETECTED_CONTACT {date:date("2021-09-01")}]->(d22)
+
+
+create (d11)-[:DETECTED_CONTACT {date:date("2021-09-01")}]->(d31)	
+create (d11)-[:DETECTED_CONTACT {date:date("2021-11-09")}]->(d31)	
+
+create (d12)-[:DETECTED_CONTACT {date:date("2021-11-08")}]->(d31)
+create (d12)-[:DETECTED_CONTACT {date:date("2021-11-08")}]->(d31) 
+
+create (d11)-[:DETECTED_CONTACT {date:date("2021-11-07")}]->(d32)
+create (d11)-[:DETECTED_CONTACT {date:date("2021-11-06")}]->(d32)
+
+create (d12)-[:DETECTED_CONTACT {date:date("2021-09-01")}]->(d32)
+
+
+create (d11)-[:DETECTED_CONTACT {date:date("2021-09-01")}]->(d41)
+create (d11)-[:DETECTED_CONTACT {date:date("2021-09-01")}]->(d41)
+
+create (d11)-[:DETECTED_CONTACT {date:date("2021-11-12")}]->(d41)
+create (d11)-[:DETECTED_CONTACT {date:date("2021-11-12")}]->(d41)
+
+create (d12)-[:DETECTED_CONTACT {date:date("2021-11-11")}]->(d41)
+create (d12)-[:DETECTED_CONTACT {date:date("2021-09-01")}]->(d41)
+
+create (d12)-[:DETECTED_CONTACT {date:date("2021-11-07")}]->(d42)
