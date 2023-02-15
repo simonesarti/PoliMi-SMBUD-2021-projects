@@ -1,4 +1,4 @@
-# PoliMi ***Systems and Methods for Big and Unstructure Data*** 2021 course projects
+# PoliMi ***Systems and Methods for Big and Unstructured Data*** 2021 course projects
 
 SCENARIO: Suppose you want to build an information system for managing pandemic information for a given country.
 
