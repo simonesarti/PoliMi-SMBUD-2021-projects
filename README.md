@@ -1,7 +1,7 @@
 # PoliMi ***Systems and Methods for Big and Unstructure Data*** 2021 course projects
 
 ## Project 1: Neo4j
-[Specification]()
+[Specification](project 1 - neo4j/SMBUD 2021 - Project work specifications - part 1.pdf)
 
 ## Project 2: MongoDB
 [Specification]()
