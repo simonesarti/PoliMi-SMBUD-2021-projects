@@ -7,5 +7,5 @@
 [Specification](./project 2 - mongoDB/SMBUD 2021 - Project work specifications - part 2.pdf)
 
 ## Project 3: ElasticSearch
-[Specification]()
+[Specification](./project 3 - elasticsearch/SMBUD 2021 - Project work specifications - part 3.pdf)
 
